@@ -1,0 +1,758 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    padding: 2rem 2rem 0 2rem ;
+    height: 4rem;
+    /* background-color: #E3B308; */
+}
+
+.navbar .brand_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar .brand_section img {
+    height: 35px;
+    width: 35px;
+    margin-left: 5px;
+}
+
+.navbar .brand_section p {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 5px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+}
+.navbar ul li{
+    cursor: pointer;
+}
+.navbar ul li:not(:nth-child(1)) {
+    margin-left: 2rem;
+}
+
+.navbar ul .active {
+    color: #EE6D24;
+}
+
+.section1 {
+    width: 100%;
+    height: 40rem;
+    /* Ensure the section covers the full viewport height */
+    overflow: hidden;
+    /* Hide any overflow */
+}
+
+.section1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the container */
+    z-index: -1;
+}
+
+.section2 {
+    position: absolute;
+    top: 25rem;
+}
+
+.section2 .content {
+    width: 25rem;
+    height: 30rem;
+    margin-left: 10%;
+}
+
+.section2 .content .txt1 {
+    font-size: 35px;
+    font-weight: 800;
+    color: #260571;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section2 .content .txt2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    margin: 5px 0px 5px 0px;
+    font-family: "Oswald", sans-serif;
+}
+
+.section2 .content button {
+    background: linear-gradient(90deg, #FF5C00 0%, #E3B308 100%);
+    padding: 9px 23px 9px 23px;
+    border-radius: 11px;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+
+.section3 {
+    position: relative;
+    height: 50rem;
+    background-color: #e0dfff;
+    background-image: linear-gradient(to top, #d1cff5, #ffffff);
+    width: 100%;
+}
+
+.section3 .brand_logos {
+    display: flex;
+    align-items: center;
+    margin: 5% 10% 0 10%;
+    justify-content: center;
+}
+
+.section3 .txt1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+}
+
+.section3 .content {
+    display: flex;
+    margin: 10% 10% 0 10%;
+}
+
+.section3 .content .txt2 {
+    color: rgba(255, 92, 0, 1);
+    font-family: "Oswald", sans-serif;
+}
+
+.section3 .content .txt3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.section3 .content .items {
+    display: flex;
+    align-items: center;
+}
+
+.section3 .content .items div {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 15rem;
+}
+
+.section3 .content .items div img {
+    margin-right: 1rem;
+}
+
+.section3 .content .points {
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.section3 .content .points ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section3 .content .points ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.section3 .content .points ul li::before {
+    content: "\2713";
+    background-color: #EE6D24;
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 0.5rem;
+    font-size: 0.6em;
+    width: 1em;
+    padding: 0.2em;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+}
+
+.section3 .content button {
+    background: linear-gradient(90deg, #FF5C00 0%, #E3B308 100%);
+    padding: 9px 23px 9px 23px;
+    border-radius: 11px;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+
+.section3 .content .contentLeft {
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.section3 .content .contentRight {
+    margin-left: 3rem;
+}
+
+.section4 {
+    background: linear-gradient(180deg, #660DD9 0%, #1B0360 100%);
+    height: 50rem;
+    width: 100%;
+}
+
+.section4 .cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .cards .cardDiv {
+    height: 28rem;
+    background-color: #660DD9;
+    width: 100%;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.section4 .cards .cardDiv {
+    width: 18rem;
+}
+
+.section4 .cards .cardDiv .imageDiv {
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .cards .cardDiv h2 {
+    text-align: center;
+    height: 4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section4 .cards .cardDiv p {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+.section4 .cards .leftArrow{
+    cursor: pointer;
+}
+.section4 .cards .rightArrow{
+    cursor: pointer;
+}
+.section4 .cards .card1 {
+    margin-right: 5rem;
+    background: rgba(255, 255, 255, 1);
+}
+
+.section4 .cards .card2 {
+    margin-right: 5rem;
+    background: linear-gradient(90deg, #E40909 0%, #FFB800 100%);
+}
+
+.section4 .cards .card3 {
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.section4 .cards .card2 h2 {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section4 .txt1 {
+    font-family: "Oswald", sans-serif;
+    color: rgba(238, 109, 36, 1);
+    margin: 0;
+    padding: 5% 15% 0% 15%;
+}
+
+.section4 .txt2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:
+        rgba(255, 255, 255, 1);
+}
+
+.section4 .txt3 {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.section4 .top_content {
+    display: flex;
+    padding: 0% 15% 1% 15%;
+}
+
+.section4 .navigators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.section4 .navigators .navigator {
+    margin: 0.2rem;
+    width: 20px;
+    height: 5px;
+    background-color: #a99cc7;
+    cursor: pointer;
+}
+
+.section4 .navigators .navigator:nth-child(2) {
+    background: rgba(238, 109, 36, 1);
+}
+
+.section5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #d1cff5, #ffffff);
+}
+
+.section5 .imgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5 .imgDiv img {
+    height: 45rem;
+    width: 45rem;
+}
+
+.section5>div {
+    display: flex;
+    margin: 5% 10% 5% 10%;
+}
+
+.section5>div .content {
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.section5>div .content>div {
+    text-align: right;
+    width: 28rem;
+}
+
+.section5>div .content .txt1 {
+    color: rgba(238, 109, 36, 1);
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.section5>div .content .txt2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section5>div .content .txt3 {
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    text-align: justify;
+}
+
+.section5>div .content button {
+    background: linear-gradient(90deg, #FF5C00 0%, #E3B308 100%);
+    padding: 9px 23px 9px 23px;
+    border-radius: 11px;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+
+.section6 {
+    width: 100%;
+    position: relative;
+}
+
+.section6 img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the container */
+    z-index: -1;
+}
+
+.section6 .top_content {
+    position: absolute;
+    color: #d1cff5;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.section6>div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section6 .top_content p {
+    color: rgba(238, 109, 36, 1);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 1rem;
+}
+
+.section6 .top_content h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+.section7 {
+    background: linear-gradient(to top, #d1cff5, #ffffff);
+    height: 50rem;
+}
+
+.section7 .top_content>div {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.section7 .top_content>div h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section7 .top_content>div p {
+    text-align: justify;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 0.82rem;
+}
+
+.section7 .tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.section7 .tabs button {
+    border: none;
+    padding: 8px 18px;
+}
+
+.section7 .tabs .btn1 {
+    border-radius: 10px 0px 0px 10px;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(90deg, #E40909 0%, #FFB800 100%);
+    cursor: pointer;
+}
+
+.section7 .tabs .btn2 {
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgba(217, 217, 217, 1);
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.section7 .cards {
+    margin-top: 2rem;
+}
+
+.section7 .cards>div {
+    display: flex;
+    justify-content: center;
+}
+
+.section7 .cards .cardDiv {
+    text-align: center;
+}
+
+.section7 .cards .cardDiv {
+    background: linear-gradient(180deg, #660DD9 0%, #1B0360 100%);
+    margin: 0.5rem;
+    border-radius: 20px;
+    width: 22rem;
+    color: white;
+}
+
+.section7 .cards .cardDiv hr {
+    margin: 2rem;
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, #E40909 0%, #FFB800 100%);
+}
+
+.section7 .cards .cardDiv .perks {
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.section7 .cards .cardDiv .cardTop p {
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+}
+
+.section7 .cards .cardDiv .cardTop h1 {
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+.section7 .cards .cardDiv .cardTop {
+    margin-bottom: 2rem;
+}
+
+.section7 .cards .cardDiv .cardBottom {
+    font-family: "Oswald", sans-serif;
+    padding: 0.5rem;
+    font-weight: 500;
+    background: linear-gradient(90deg, #FF5C00 0%, #E3B308 100%);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.section7 .cards .cardDiv {
+    position: relative;
+}
+
+.section7 .cards .cardDiv .cardChip {
+    position: absolute;
+    background: linear-gradient(90deg, #FF5C00 0%, #E3B308 100%);
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    border-radius: 0px 1rem 1rem 0px;
+    top: 10%;
+    font-family: "Oswald", sans-serif;
+}
+
+.section8 {
+    background: linear-gradient(to bottom, #d1cff5, #ffffff);
+    padding-bottom: 5rem;
+
+}
+
+.section8 .imgDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.section8>div {
+    margin: auto;
+}
+
+.section8 h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.section8 p {
+    text-align: justify;
+}
+
+.section8 .paragraph {
+    display: flex;
+    justify-content: center;
+}
+
+.section8 .paragraph p {
+    width: 74%;
+}
+
+.footer {
+    background: linear-gradient(180deg, #660DD9 0%, #1B0360 100%);
+}
+
+.footer>div:first-child {
+    padding: 0 calc(100%/6) 0 calc(100%/6);
+}
+
+.footer .logoSection {
+    display: flex;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+}
+
+.footer .logoSection img {
+    margin-right: 0.5rem;
+    height: 35px;
+    width: 35px;
+}
+
+.footer .content {
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.footer .content .contentDiv {
+    width: calc(100%/4);
+    padding: 0 1rem 0 1rem;
+}
+
+.footer .content .div1 .part1 {
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .content .div1 .part2 {
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.footer .content .div2 h2 {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.footer .content .div2 ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.8rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 350;
+}
+
+.footer .content .div3 h2 {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.footer .content .div3 .heading {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+.footer .content .div3 .infoData {
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight: 350;
+}
+
+.footer .content .div4 h2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer .content .div4 p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 350;
+    display: flex;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .content .div4 input {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0.1px solid rgba(255, 255, 255, 0.7);
+    padding: 0.8rem 0 0.8rem 0.8rem;
+    width: 100%;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    padding-inline: 0;
+}
+
+.footer .content .div4 input::after {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer .content .div4 input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 100;
+    padding: 0.5rem;
+
+}
+
+.footer .content .div4 button{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    background: linear-gradient(90deg, #FF5C00 0%, #E3B308 100%);
+    padding: 9px 23px 9px 23px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    display: flex;
+}
+.footer .content .div4 button span{
+    margin: auto;
+}
+.footer .footerHorizantalSeparation{
+    border-width: 0.1px;
+    border-color: rgba(255, 255, 255, 0.7);
+}
+.footer .bottom_section{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 1);
+    padding: 2rem calc(100%/6) 2rem calc(100%/6);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer .bottom_section .right ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.footer .bottom_section .right ul li{
+    margin-left: 2rem;
+}
+.footer .content .div1 .part3{
+    display: flex;
+    cursor: pointer;
+}
